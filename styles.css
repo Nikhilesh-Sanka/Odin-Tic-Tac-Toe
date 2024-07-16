@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+}
+.board{
+    background-color:#854d0e;
+    width:300px;
+    height:300px;
+    display:grid;
+    grid-template-rows:repeat(3,1fr);
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    padding:10px;
+    border-radius:10px;
+    margin:50px auto;
+    margin-bottom:0;
+}
+.box{
+    background-color:#422006;
+    color:white;
+    border-radius:5px;
+    font-size:80px;
+    text-align:center;
+}
+.box:hover{
+    cursor:pointer;
+}
+.player-inputs{
+    width:300px;
+    height:100px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.player-inputs button{
+    width:130px;
+    height:50px;
+    font-size:1.4rem;
+    background-color:#0d9488;
+    color:white;
+    border-radius:10px;
+}
+.game-details{
+    width:300px;
+    margin:10px auto;
+    background-color:black;
+    color:white;
+    font-size:1.2rem;
+    text-align:center;
+    padding:30px 0;
+    border-radius:10px;
+}
+button:hover{
+    cursor:pointer;
+}
+#restart-button{
+    margin:20px auto;
+    display:block;
+    height:70px;
+    width:300px;
+    background-color:#4c0519;
+    color:white;
+    font-size:2rem;
+    border-radius:10px;
+}
+.player-one-input-box,.player-two-input-box{
+    width:300px;
+    position:fixed;
+    top:300px;
+    right:calc(50% - 150px);
+}
+form{
+    width:300px;
+    height:200px;
+    background-color:#a5b4fc;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    border:1px solid red;
+    border-radius:10px;
+}
+form > *{
+    display:block;
+}
+form button{
+    width:100px;
+    height:40px;
+    background-color:black;
+    color:white;
+    border-radius:10px;
+}
+#player-one-input-close-button,#player-two-input-close-button{
+    text-align:right;
+    color:white;
+}
+.open-close-player-one-input-box,.open-close-player-two-input-box{
+    display:none;
+}
